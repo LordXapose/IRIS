@@ -74,28 +74,26 @@ A useful internal security platform must understand more than:
 
 It should build a picture such as:
 
-```
 CORP.LOCAL
-     │
-     ├── DC01
-     │    ├── DNS
-     │    ├── LDAP
-     │    ├── LDAPS
-     │    ├── Kerberos
-     │    └── SMB
-     │
-     ├── DC02
-     │
-     ├── FILE01
-     │    └── SMB
-     │
-     ├── WEB01
-     │    ├── HTTP
-     │    └── HTTPS
-     │
-     └── USER-PC-042
-          └── RDP
-```
+│
+├── DC01
+│   ├── DNS
+│   ├── LDAP
+│   ├── LDAPS
+│   ├── Kerberos
+│   └── SMB
+│
+├── DC02
+│
+├── FILE01
+│   └── SMB
+│
+├── WEB01
+│   ├── HTTP
+│   └── HTTPS
+│
+└── USER-PC-042
+    └── RDP
 
 IRIS turns those observations into an understandable internal attack-surface map.
 
