@@ -649,25 +649,25 @@ iris/
 
 ## Development Roadmap
 
-### Phase 1 — Core (target: 1–2 weeks)
+### Phase 1 Core (target: 1–2 weeks)
 Native Windows CLI, scope enforcement, SQLite, scan management, logging, `iris doctor`, basic host discovery, basic port discovery.
 
-### Phase 2 — Network Intelligence
+### Phase 2 Network Intelligence
 Service detection, OS fingerprinting, DNS, reverse DNS, MAC/vendor, infrastructure relationships.
 
-### Phase 3 — Windows / SMB
+### Phase 3 Windows / SMB
 SMB discovery, share enumeration (authorized), Windows host information, remote-access service detection.
 
-### Phase 4 — Active Directory
+### Phase 4 Active Directory
 Domain discovery, domain controllers, LDAP, Kerberos, users, groups, computers, OUs, trust relationships.
 
-### Phase 5 — Certificate & Infrastructure Intelligence
+### Phase 5 Certificate & Infrastructure Intelligence
 AD CS discovery, certificate authorities, certificate relationships, internal DNS, DHCP, TLS/certificate monitoring.
 
-### Phase 6 — Evidence & Historical Intelligence
+### Phase 6 Evidence & Historical Intelligence
 Confidence engine, evidence model, scan comparison, change detection, asset history.
 
-### Phase 7 — Dashboard
+### Phase 7 Dashboard
 Network overview, host inventory, service inventory, AD explorer, certificate view, findings, historical changes, relationship visualization.
 
 ---
