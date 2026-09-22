@@ -72,7 +72,6 @@ A useful internal security platform must understand more than:
 ```
 
 It should build a picture such as:
-
 ```
 CORP.LOCAL
      │
