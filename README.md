@@ -1,3 +1,4 @@
+
 ```markdown
 # IRIS
 
@@ -72,6 +73,7 @@ A useful internal security platform must understand more than:
 ```
 
 It should build a picture such as:
+
 ```
 CORP.LOCAL
      │
@@ -232,6 +234,8 @@ The core application does **not** require:
 - Linux VM
 - WSL
 - Cloud infrastructure
+
+Local state and services:
 
 - Database: `data/iris.db`
 - Dashboard: `http://127.0.0.1:8000`
@@ -647,15 +651,26 @@ iris/
 
 ## Development Roadmap
 
-| Phase | Focus | Target |
-|---|---|---|
-| **1** | Native Windows CLI, scope enforcement, SQLite, scan management, logging, `iris doctor`, basic host + port discovery | 1–2 weeks |
-| **2** | Service detection, OS fingerprinting, DNS, reverse DNS, MAC/vendor, infrastructure relationships |  |
-| **3** | SMB discovery, share enumeration (authorized), Windows host info, remote-access service detection |  |
-| **4** | Domain discovery, domain controllers, LDAP, Kerberos, users, groups, computers, OUs, trusts |  |
-| **5** | AD CS discovery, CAs, certificate relationships, internal DNS, DHCP, TLS/certificate monitoring |  |
-| **6** | Confidence engine, evidence model, scan comparison, change detection, asset history |  |
-| **7** | Dashboard, network overview, host inventory, service inventory, AD explorer, certificate view, findings, historical changes, relationship visualization |  |
+### Phase 1 — Core (target: 1–2 weeks)
+Native Windows CLI, scope enforcement, SQLite, scan management, logging, `iris doctor`, basic host discovery, basic port discovery.
+
+### Phase 2 — Network Intelligence
+Service detection, OS fingerprinting, DNS, reverse DNS, MAC/vendor, infrastructure relationships.
+
+### Phase 3 — Windows / SMB
+SMB discovery, share enumeration (authorized), Windows host information, remote-access service detection.
+
+### Phase 4 — Active Directory
+Domain discovery, domain controllers, LDAP, Kerberos, users, groups, computers, OUs, trust relationships.
+
+### Phase 5 — Certificate & Infrastructure Intelligence
+AD CS discovery, certificate authorities, certificate relationships, internal DNS, DHCP, TLS/certificate monitoring.
+
+### Phase 6 — Evidence & Historical Intelligence
+Confidence engine, evidence model, scan comparison, change detection, asset history.
+
+### Phase 7 — Dashboard
+Network overview, host inventory, service inventory, AD explorer, certificate view, findings, historical changes, relationship visualization.
 
 ---
 
@@ -777,12 +792,15 @@ A mature IRIS installation lets a security professional immediately understand:
 
 The end goal is a **living, evidence-backed map of an organization's internal infrastructure**.
 
----
-
-
 ## Disclaimer
 
 IRIS is a security tool intended for **authorized use only**. The authors assume no liability for misuse, unauthorized scanning, or damage caused by this software. You are responsible for ensuring you have explicit permission before running IRIS against any network or system.
 
-> **Map the inside. Understand the exposure. Track the change.**
+> **See the inside. Understand the exposure. Track the change.**
 ```
+
+Changes made:
+
+- Top and bottom taglines now both read **"See the inside. Understand the exposure. Track the change."**
+- The "does not require" list no longer contains the database and dashboard bullets. They now sit under their own **"Local state and services"** label.
+- Roadmap converted from a broken table (with empty cells) into a clean phase list, with the only target the spec actually gave (Phase 1: 1–2 weeks) preserved.
